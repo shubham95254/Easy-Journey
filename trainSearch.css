@@ -1,0 +1,35 @@
+.from #from {
+  width: 100%;
+  outline: none;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+}
+
+.from.active #from {
+  border-radius: 5px 5px 0 0;
+}
+
+.from.active .trainsSearch1 {
+  background: #fff;
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+  max-height: 280px;
+  overflow-y: auto;
+  border-radius: 0 0 10px 10px;
+}
+
+.trainsSearch1 li {
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.from.active .trainsSearch1 li {
+  display: block;
+}
+.trainsSearch1 li:hover {
+  background: #efefef;
+}

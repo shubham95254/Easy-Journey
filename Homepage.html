@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Easy Journey</title>
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="trainSearch.css">
+    <link rel="stylesheet" href="trainSearchto.css">
+</head>
+
+<body>
+    <header>
+        <h1>EASY JOURNEY</h1>
+        <span>
+            <button id="login"><a href="login.html">Login</a></button>
+        </span>
+    </header>
+    <main>
+        <!-- search train -->
+        <div id="SearchTrain">
+            <h3 id="h3">Search Train</h3>
+            <form class="container" method="get">
+                <div class="stations">
+                    <div class="from">
+                        <h5>FROM:</h5>
+                        <!-- here goes from station code -->
+                        <input type="text" name="from" id="from" placeholder="Enter station">
+                        <div class="trainsSearch1">
+                            <!-- here list of trains are inserted from javascript -->
+                        </div>
+                    </div>
+                    <div class="to">
+                        <h5>TO:</h5>
+                        <!-- here goes to station code -->
+                        <input type="text" name="to" id="to" placeholder="Enter station">
+                        <div class="trainsSearch2">
+                            <!-- here list of trains are inserted from javascript -->
+                        </div>
+                    </div>
+                </div>
+                <div class="date">
+                    <h5>Date of Journey:</h5>
+                    <!-- here goes from station code -->
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="Search Trains" id="submit">
+                    <input type="reset" value="Clear" id="reset">
+                </div>
+            </form>
+        </div>
+
+        <!-- results of search -->
+        <!-- code in js -->
+    </main>
+    <script src="trainSearch.js"></script>
+    <script src="loginbtn.js" type="module"></script>
+    <script src="stationList.js"></script>
+    <script src="from-search.js"></script>
+    <script src="to-search.js"></script>
+    <!-- <script src="tourist.js"></script> -->
+</body>
+
+</html>

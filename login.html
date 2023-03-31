@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login | Easy Journey</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <header>
+            <h1>EASY JOURNEY</h1>
+        </header>        
+        <main>
+            <div class="login-box">
+                <h1>Login</h1>
+                <form >
+                    <div class="textbox">
+                        <input type="email" placeholder="Email" name="email" id="email" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="password" placeholder="Password" name="password" id="password" required>
+                    </div>
+                    <p><input class="btn" id="btn" type="submit" value="Sign In"></p>
+                </form>
+                <p id="newUser">New User? </p>
+                <p id="button"><button type="button" onclick="window.location.href='signup.html'">Sign Up</button></p>
+                <div class="or-box" >
+                    <div class="or-line"></div>
+                    <div class="or-text">or sign in with</div>
+                    <div class="or-line"></div>
+                </div>
+                <div style="display: flex">
+                    <button id="googleLogin">
+                        <img src="images/google.png" alt="Google">
+                    </button>
+                </div>
+            </div>
+            
+        </main>
+        <script src="login.js" type="module"></script>
+    </body>
+</html>
+
+

@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+/* top bar */
+body {
+  background-color: #f7f7f7;
+  margin: 0;
+  background-image: url("images/train4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: #47a9ffd6;
+  display: flex;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+  width: 100%;
+  color: #fff;
+}
+
+header a,
+#login {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+header button {
+  background-color: rgba(255, 0, 0, 0.867);
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  display: block;
+  margin: 40px 20px 30px 0;
+}
+
+header button#login:hover {
+  background-color: #ff0000;
+}
+
+/* search train div */
+#SearchTrain {
+  width: 75%;
+  background-color: #efefef91;
+  background-attachment: fixed;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 4%;
+  list-style-type: none;
+}
+
+#h3 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 35% 50px 35%;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #0043ff;
+}
+
+h5 {
+  padding: 0 0 5px 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+input[type="text"],
+input[type="date"] {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  width: 200px;
+}
+
+input#date:hover {
+  cursor: pointer;
+}
+
+.stations {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 20px auto 20px auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#submit,
+#reset {
+  margin: 5px;
+  width: 200px;
+  height: 30px;
+  margin: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#submit {
+  background-color: #002eff;
+}
+#submit:hover {
+  background-color: #0b00ff;
+  cursor: pointer;
+}
+
+#reset {
+  background-color: rgba(255, 0, 0, 0.821);
+}
+
+#reset:hover {
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+/* section 2- results */
+
+nav {
+  background-color: black;
+  padding: 5px 0 5px 40px;
+  position: sticky;
+  top: 0px;
+  display: flex;
+}
+#result a {
+  text-decoration: none;
+  margin: 5px;
+  color: white;
+}
+nav a {
+  color: #36ed82;
+}
+nav a:hover {
+  color: #1db45c;
+}
+/* main */
+
+#result {
+  grid-template-columns: 4fr 1fr;
+}
+/* search result of trains */
+#result div#TrainList {
+  width: 95%;
+  background-color: #f2f8f49c;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 0 auto 30px auto;
+  margin-top: 20px;
+  height: fit-content;
+}
+
+#result h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px 220px 10px 220px;
+  border-bottom: 4px solid #2ecc71;
+}
+
+#result div.trainBlock {
+  border: 2px solid #cfd3d8;
+  margin: 5%;
+  background-color: #ffffffb3;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ol#trainList {padding = 0}; */
+#result div.trainNameNo {
+  background-color: #e3e6ea;
+  display: flex;
+  justify-content: space-between;
+}
+
+#result span.trainNo,
+span.trainName {
+  padding: 10px;
+  margin: auto 20px;
+}
+
+#result .time {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#result p {
+  text-align: center;
+}
+#result h5 {
+  margin-bottom: 20px;
+}
+#result button.submitBtn:hover {
+  background-color: #5040f7;
+  cursor: pointer;
+}
+
+#result button.submitBtn {
+  color: white;
+  background-color: #6558f5;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 40px 20px 30px 0;
+}
+
+#result .btn {
+  text-align: center;
+}
+
+/* side page of tourist attractions */
+.touristAttraction {
+  width: 90%;
+  background-color: #f2f8f49c;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0;
+  margin-top: 20px;
+  height: fit-content;
+}
+
+#touristAttractions{
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+#result h3 {
+  font-size: 25px;
+  text-align: center;
+}
+
+#result ul {
+  list-style-type: circle;
+}
+#result ol {
+  list-style-type: none;
+}

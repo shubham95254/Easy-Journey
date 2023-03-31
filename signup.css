@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* top bar */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  
+  background-image: url('images/login-back.jpg');
+  background-size: cover;
+}
+
+header {
+  background-color: #2ecc71db;
+  display: flex;
+  border-radius: 0 0 15px 15px;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+  width: 100%;
+  color: #fff;
+}
+/* main */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 30px;
+}
+
+.signup-box {
+  width: 470px;
+  background-color: #ffffffbd;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.signup-box h1 {
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 4px solid #2ecc71;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+
+.textbox input::placeholder {
+  color: #3e3e3e;
+}
+
+.textbox {
+  width: 80%;
+  font-size: 20px;
+  padding: 8px 0;
+  border-bottom: 1px solid #3e3e3e;
+  margin: 5px auto;
+}
+
+.textbox input {
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 18px;
+  width: 100%;
+}
+
+#btn {
+  background-color: #2ecc71;
+  color: white;
+  padding: 14px 20px;
+  margin: 20px 0 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #27ae60;
+}
+
+
+form {
+  text-align: center;
+}
+
+.or-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.or-line {
+  
+  width: 25%;
+
+  /* flex-grow: 1; */
+  height: 1px;
+  background-color: #797979;
+}
+
+.or-text {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+#googleLogin {
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff00;
+  padding: 0;
+  border: 0px;
+  cursor: pointer;
+  margin: 0 auto;
+  /* margin-top: 30px; */
+}
+
+#googleLogin:hover {
+  background-color: #ffffffbd;
+}
+
+#googleLogin img {
+  width: 50px;
+  height: 50px;
+}
