@@ -3,8 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebas
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
 import {
   getAuth,
-  signOut,
-  GoogleAuthProvider,
+  signOut
 } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
 
 const firebaseConfig = {
@@ -42,31 +41,11 @@ if (localStorage.getItem("isLoggedIn") === "true") {
 }
 
 
-// // Add an event listener to the login button
-// loginBtn.addEventListener("click", function () {
-//   // Check if the user is logged in
-//   if (localStorage.getItem("isLoggedIn") === "true") {
-//     // If the user is logged in, sign them out
-//     firebase
-//       .auth()
-//       .signOut()
-//       .then(function () {
-//         // Update the login button text to "Login"
-//         loginBtn.innerHTML = "<a href='login.html'>Login</a>";
-//       })
-//       .catch(function (error) {
-//         // Handle signout errors
-//         console.error(error);
-//       });
-//   } 
 
-// Add an authentication state listener to update the login button text
 auth.onAuthStateChanged(function (user) {
   if (user) {
-    // If the user is logged in, update the login button text to "Logout"
     loginBtn.innerHTML = "Logout";
   } else {
-    // If the user is not logged in, update the login button text to "Login"
     loginBtn.innerHTML = "<a href='login.html'>Login</a>";
   }
 });
