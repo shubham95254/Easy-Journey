@@ -150,10 +150,10 @@ nav {
   color: white;
 }
 nav a {
-  color: #36ed82;
+  color: #002eff;
 }
 nav a:hover {
-  color: #1db45c;
+  color: #0b00ff;
 }
 /* main */
 
@@ -175,7 +175,7 @@ nav a:hover {
   font-size: 30px;
   text-align: center;
   margin: 20px 220px 10px 220px;
-  border-bottom: 4px solid #2ecc71;
+  border-bottom: 4px solid #0043ff;
 }
 
 #result div.trainBlock {
